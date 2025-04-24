@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",     // ← вместо "@vue/tsconfig/tsconfig.dom.json"
+  "compilerOptions": {
+    "composite": true,              // если вам нужен project reference
+    "types": ["vite/client"],       // чтобы Vite подхватил .vue и import.meta
+    "outDir": "dist"                // куда кладёт сборщик, опционально
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue"
+  ]
+}
